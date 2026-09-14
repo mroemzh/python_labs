@@ -1,0 +1,6 @@
+print('Кондратьев Матвей')
+a = input('a: ')
+b = input('b: ')
+a=float(a.replace(',','.'))
+b=float(b.replace(',','.'))
+print(f'sum={a+b}; avg={round((a+b)/2,2)}')

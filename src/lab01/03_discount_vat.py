@@ -1,0 +1,7 @@
+print('Кондратьев Матвей')
+price = float(input())
+discount = float(input())
+vat = float(input())
+print(f'База после скидки: {(price * (1 - discount/100)):.2f}₽')
+print(f'НДС: {(price * (1 - discount/100) * (vat/100)):.2f}₽')
+print(f'Итого к оплате: {(price * (1 - discount/100) + price * (1 - discount/100) * (vat/100)):.2f}')
