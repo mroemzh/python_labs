@@ -8,7 +8,8 @@
 
 все работает
 ## Задание 3
-![scrin](images/image%20copy%202.png)
+<img width="619" height="290" alt="image" src="https://github.com/user-attachments/assets/89cd8116-984e-4abf-bdaf-9e5acce77752" />
+
 вауу
 ## Задание 4
 ![scrin](images/image%20copy%203.png)
