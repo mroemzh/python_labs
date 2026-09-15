@@ -1,6 +1,7 @@
 # python_labs
 ## Задание 1
-![scrin](images/image.png)
+![scrin](<img width="793" height="131" alt="image" src="https://github.com/user-attachments/assets/6affdadd-cedf-49f7-b534-84bef2f49e31" />
+)
 я не понял что значит скрины подписывать у меня на каждом скрине наверху будет фио
 ## Задание 2
 ![scrin](images/image%20copy.png)
