@@ -4,7 +4,8 @@
 
 я не понял что значит скрины подписывать у меня на каждом скрине наверху будет фио
 ## Задание 2
-![scrin](images/image%20copy.png)
+<img width="609" height="210" alt="image" src="https://github.com/user-attachments/assets/84fb43db-ca6d-4f62-8e0d-c8a023c3823f" />
+
 все работает
 ## Задание 3
 ![scrin](images/image%20copy%202.png)
