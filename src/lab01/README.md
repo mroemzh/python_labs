@@ -12,7 +12,8 @@
 
 вауу
 ## Задание 4
-![scrin](images/image%20copy%203.png)
+<img width="605" height="187" alt="image" src="https://github.com/user-attachments/assets/1628926e-2181-400e-8113-f6dadd6b3356" />
+
 ничего себе
 ## Задание 5
 ![scrin](images/image%20copy%204.png)
