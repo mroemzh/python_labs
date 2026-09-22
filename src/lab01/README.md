@@ -1,9 +1,9 @@
 # python_labs
 ## Задание 1
-![scrin](images/image.png)
+![scrin](![alt text](images/image.png))
 я не понял что значит скрины подписывать у меня на каждом скрине наверху будет фио
 ## Задание 2
-![scrin](images/image%20copy.png)
+![scrin](python_labs/images/image%20copy.png)
 все работает
 ## Задание 3
 ![scrin](images/image%20copy%202.png)
