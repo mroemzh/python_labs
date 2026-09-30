@@ -44,3 +44,11 @@
 <img width="225" height="56" alt="image" src="https://github.com/user-attachments/assets/2ae044d3-b418-4150-be78-47aa77bb4eae" />
 <img width="187" height="56" alt="image" src="https://github.com/user-attachments/assets/487a6aa8-fa1f-4f56-8500-256c1ec1a7e4" />
 <img width="426" height="158" alt="image" src="https://github.com/user-attachments/assets/96699cff-b05d-418d-8061-005158e67b0f" />
+
+## Задание 3
+
+<img width="451" height="56" alt="image" src="https://github.com/user-attachments/assets/ef3c8040-8233-4f87-ae02-01d7689e6387" />
+<img width="364" height="54" alt="image" src="https://github.com/user-attachments/assets/265e0959-359e-472a-87d3-36801fcf82fa" />
+<img width="456" height="56" alt="image" src="https://github.com/user-attachments/assets/f5a62982-b82c-4b2c-b023-9a08e701fca4" />
+<img width="589" height="59" alt="image" src="https://github.com/user-attachments/assets/abf2f035-12e8-488f-87b4-38c650a29d30" />
+
