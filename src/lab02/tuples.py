@@ -1,7 +1,7 @@
 import ast
 m = ast.literal_eval(input())
 
-def format_record(rec: tuple[str, str, float]) -> str:
+def format_record(m: tuple[str, str, float]) -> str:
     ans = ''
     p1 = list(map(str,m[0].split()))
     if len(p1) < 2:
@@ -19,5 +19,5 @@ def format_record(rec: tuple[str, str, float]) -> str:
         ans = ans + ','
 
     ans = ans + ' гр. ' + p2 + ', GPA ' + str("{:.2f}".format(p3))
-    print(ans)
-format_record(m)
+    return ans
+print(format_record(m))
