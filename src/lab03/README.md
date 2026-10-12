@@ -15,14 +15,6 @@
 
 ### count_freq + top_n
 
-<img width="430" height="126" alt="image" src="https://github.com/user-attachments/assets/b02788df-79a6-4b8d-9f97-08ca28dbbbf6" />
-
-сделал так что последнее число будет равно n для функции top_n, если числа нет то по умолчанию не будет убирать последний элемент и выведет топ 5
- 
- 
- 
-#### тесты
-
 
 <img width="287" height="76" alt="image" src="https://github.com/user-attachments/assets/9aea166b-9039-4df9-9c99-64c59d1c2db6" />
 
