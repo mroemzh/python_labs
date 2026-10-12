@@ -24,20 +24,24 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
     return freq
 
 
-def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
+def top_n(freq: dict[str, int], n) -> list[tuple[str, int]]:
     items = sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))
     return items[:n]
 
 
 raw = input()
-
 norm = normalize(raw)
 print(norm)
 
 tokens = tokenize(norm)
 print(tokens)
 
+n = 5
+if tokens and tokens[-1].isdigit():
+    n = int(tokens[-1])
+    tokens = tokens[:-1]
+
 freq = count_freq(tokens)
 print(freq)
 
-print(top_n(freq))
+print(top_n(freq,n))
