@@ -20,3 +20,8 @@
 
 <img width="311" height="80" alt="image" src="https://github.com/user-attachments/assets/2dd16f4a-f227-4f51-9f88-0eaadc31b1f5" />
 
+## text_stats.py 
+
+<img width="1075" height="165" alt="image" src="https://github.com/user-attachments/assets/974b22df-4538-4261-bc8e-61eb671cdbb3" />
+
+вывожу через cmd, так как терминал плохо работал с кириллицей, появлялись греческие символы. Спустя долгое время пришлось запускать только так, причем указывая кодировку. Вводные данные писал в отдельном файле input.txt. Контрольные тесты указал выше, тестировал конкретно text.py
