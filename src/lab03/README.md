@@ -16,9 +16,10 @@
 ### count_freq + top_n
 
 
-<img width="287" height="76" alt="image" src="https://github.com/user-attachments/assets/9aea166b-9039-4df9-9c99-64c59d1c2db6" />
+<img width="744" height="192" alt="image" src="https://github.com/user-attachments/assets/86179e82-d156-4c2d-bb55-f89494b0632c" />
 
-<img width="311" height="80" alt="image" src="https://github.com/user-attachments/assets/2dd16f4a-f227-4f51-9f88-0eaadc31b1f5" />
+
+<img width="577" height="146" alt="image" src="https://github.com/user-attachments/assets/6dc0fbac-8a0f-4ad0-bc68-b4581d2b0d93" />
 
 ## text_stats.py 
 
