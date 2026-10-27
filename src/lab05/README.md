@@ -38,14 +38,17 @@ python src/lab05/csv_xlsx.py
 
 ### 1. Успешная конвертация JSON ↔ CSV и CSV → XLSX
 На скриншоте показан успешный запуск обоих скриптов и создание файлов.
-![Успешный запуск](img01.png)
+<img width="788" height="83" alt="image" src="https://github.com/user-attachments/assets/08861de9-1808-41ad-b589-b23455e11ddd" />
+
 
 ### 2. Результат конвертации в Excel
 На скриншоте показан открытый файл `people.xlsx` с корректной структурой таблицы.
-![Открытый XLSX](img02.png)
+
+<img width="340" height="144" alt="image" src="https://github.com/user-attachments/assets/4575cf8e-2166-4b8e-a22a-8a45219c2384" />
+
 
 ### 3. Проверка обработки ошибок
 На скриншоте показано, как программа корректно выбрасывает и перехватывает исключения:
 - `FileNotFoundError` (файла нет).
 - `ValueError` (пустой JSON, неверный тип данных).
-![Проверка ошибок](img03.png)
+<img width="830" height="252" alt="image" src="https://github.com/user-attachments/assets/60e74113-abdf-4e4b-aec0-041744ea0442" />
