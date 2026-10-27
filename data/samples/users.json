@@ -1,0 +1,5 @@
+[
+  {"id": 1, "login": "admin", "role": "root"},
+  {"id": 2, "login": "user_1", "role": "guest"},
+  {"id": 3, "login": "moderator", "role": "moder"}
+]

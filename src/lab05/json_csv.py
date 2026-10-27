@@ -73,3 +73,25 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
     # Записываем в JSON
     with p_out.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+if __name__ == "__main__":
+    print("--- ТЕСТ 1: Успешная конвертация ---")
+    json_to_csv("data/samples/people.json", "data/out/people_from_json.csv")
+    print("OK: JSON -> CSV\n")
+
+    print("--- ТЕСТ 2: Ошибка FileNotFoundError (нет файла) ---")
+    try:
+        json_to_csv("data/samples/no_such_file.json", "data/out/err.csv")
+    except FileNotFoundError as e:
+        print(f"УСПЕШНО ПОЙМАНА ОШИБКА: {e}\n")
+
+    print("--- ТЕСТ 3: Ошибка ValueError (пустой JSON) ---")
+    # Создаем пустой файл для теста
+    empty_path = Path("data/samples/empty.json")
+    empty_path.parent.mkdir(parents=True, exist_ok=True)
+    empty_path.write_text("[]", encoding="utf-8")
+    
+    try:
+        json_to_csv(empty_path, "data/out/err.csv")
+    except ValueError as e:
+        print(f"УСПЕШНО ПОЙМАНА ОШИБКА: {e}\n")

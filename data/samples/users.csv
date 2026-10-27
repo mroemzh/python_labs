@@ -1,0 +1,4 @@
+id,login,role
+1,admin,root
+2,user_1,guest
+3,moderator,moder
