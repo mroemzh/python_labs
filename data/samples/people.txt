@@ -1,0 +1,3 @@
+Alice is here. Bob is also here.
+Alice likes Python. Bob likes Python too.
+Python is great.
