@@ -14,6 +14,8 @@ def main():
     
     # Создаем подкоманды
     subparsers = parser.add_subparsers(dest="command", required=True, help="Доступные команды")
+    parser_j2c = subparsers.add_parser("cat", help="Вывести файл")
+    parser_j2c.add_argument("-n", dest="input", required=True, help="Пронумеровать строки")
 
     # 1. Команда json2csv
     parser_j2c = subparsers.add_parser("json2csv", help="Конвертировать JSON в CSV")

@@ -18,7 +18,7 @@ def main():
     parser_cat.add_argument("-n", action="store_true", help="Нумеровать строки")
 
     # 2. Команда stats
-    parser_stats = subparsers.add_parser("stats", help="Анализ частот слов в тексте")
+    parser_stats = subparsers.add_parser("stats")
     parser_stats.add_argument("--input", required=True, help="Путь к файлу")
     parser_stats.add_argument("--top", type=int, default=5, help="Сколько топ-слов вывести (по умолчанию 5)")
 
