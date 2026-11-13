@@ -32,5 +32,11 @@ python src/lab06/cli_convert.py csv2xlsx --in data/samples/people.csv --out data
 - Код использует только стандартную библиотеку.
 
 ## Примеры вывода (скриншоты)
-![Справка CLI](../images/lab06/img01.png)
-![Работа команды stats](../images/lab06/img02.png)
+
+Справка CLI
+
+<img width="895" height="363" alt="image" src="https://github.com/user-attachments/assets/78eb9be9-6814-4047-9efa-bd67e6186720" />
+
+Работа команды stats
+
+<img width="907" height="214" alt="image" src="https://github.com/user-attachments/assets/0077f212-868e-4f93-a559-b0cf345f7ebc" />
