@@ -1,5 +1,5 @@
 import random
-from src.lab07.sorting import bubble_sort, insertion_sort, selection_sort
+from src.lab07.sorting import bubble_sort, insertion_sort, selection_sort, merge_sort, counting_sort
 from src.lab07.search import linear_search, binary_search, two_sum_brute, two_sum_fast
 
 
@@ -71,11 +71,24 @@ def check_two_sum(trials=100):
 if __name__ == "__main__":
     random.seed(42) # Фиксируем seed для повторяемости
     
-    # Проверяем все три сортировки
-    for fn in (bubble_sort, insertion_sort, selection_sort):
+    # Проверяем сортировки (кроме counting_sort)
+    for fn in (bubble_sort, insertion_sort, selection_sort, merge_sort):
         check_sorting(fn, trials=100)
         
     check_search()
     check_two_sum(trials=100)
+    
+    # Отдельная проверка для counting_sort (звездочка)
+    for _ in range(100):
+        n = random.randint(0, 50)
+        # Генерируем числа в известном диапазоне от -50 до 50
+        nums = [random.randint(-50, 50) for _ in range(n)]
+        original = list(nums)
+        
+        # Запускаем сортировку с указанием границ
+        result = counting_sort(nums, -50, 50)
+        
+        assert result == sorted(nums), f"counting_sort ошибся на {nums}: {result} != {sorted(nums)}"
+        assert nums == original, f"counting_sort изменила исходный список"
     
     print("OK: все проверки пройдены успешно!")

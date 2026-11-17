@@ -1,11 +1,6 @@
 import csv
 import timeit
-import sys
-from pathlib import Path
-
-# Импортируем наши функции и функцию записи из ЛР4
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-from src.lab07.sorting import bubble_sort, insertion_sort, selection_sort
+from src.lab07.sorting import bubble_sort, insertion_sort, selection_sort, merge_sort, counting_sort
 from src.lab07.search import linear_search, binary_search, two_sum_brute, two_sum_fast
 from src.lab04.io_txt_csv import write_csv
 
@@ -24,12 +19,20 @@ def bench_sorts():
     for n in [1000, 10000, 100000]:
         data = read_numbers(n)
         
-        # Замеряем встроенный sorted
+        # 1. Встроенный sorted
         t_sorted = timeit.timeit(lambda: sorted(data), number=1)
         rows.append(("sort", n, "sorted", round(t_sorted, 4)))
         
-        # На 100 000 квадратичные сортировки могут занять часы!
-        # Поэтому ограничиваем их до 10 000
+        # 2. Merge Sort (звездочка)
+        t_merge = timeit.timeit(lambda: merge_sort(data), number=1)
+        rows.append(("sort", n, "merge", round(t_merge, 4)))
+        
+        # 3. Counting Sort (звездочка)
+        # Наши числа от -100000 до 100000, значит lo=-100000, hi=100000
+        t_count = timeit.timeit(lambda: counting_sort(data, -100000, 100000), number=1)
+        rows.append(("sort", n, "counting", round(t_count, 4)))
+        
+        # 4. Квадратичные сортировки (только до 10 000)
         if n <= 10000:
             t_bubble = timeit.timeit(lambda: bubble_sort(data), number=1)
             rows.append(("sort", n, "bubble", round(t_bubble, 4)))
@@ -40,13 +43,11 @@ def bench_sorts():
             t_select = timeit.timeit(lambda: selection_sort(data), number=1)
             rows.append(("sort", n, "selection", round(t_select, 4)))
         else:
-            # Для 100 000 ставим заглушку, как разрешено в ТЗ
             rows.append(("sort", n, "bubble", "> 60"))
             rows.append(("sort", n, "insertion", "> 60"))
             rows.append(("sort", n, "selection", "> 60"))
             
     return rows
-
 
 def bench_search():
     """Замеряет время поиска (10 000 запросов к списку из 100 000)."""
