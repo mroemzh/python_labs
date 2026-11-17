@@ -71,8 +71,10 @@ def bench_two_sum():
     rows = []
     for n in [1000, 10000]:
         data = read_numbers(n)
-        # Гарантируем, что target существует
-        target = data[0] + data[1] 
+        
+        # Берем target, который точно не соберется из чисел (-100000 до 100000)
+        # Например, 999999999. Это заставит алгоритм перебрать ВСЕ пары.
+        target = 999999999 
         
         t_brute = timeit.timeit(lambda: two_sum_brute(data, target), number=1)
         rows.append(("two_sum", n, "brute", round(t_brute, 4)))
@@ -81,7 +83,6 @@ def bench_two_sum():
         rows.append(("two_sum", n, "fast", round(t_fast, 4)))
         
     return rows
-
 
 if __name__ == "__main__":
     print("Начинаем замеры (это может занять минуту)...")
